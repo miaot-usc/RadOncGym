@@ -1,0 +1,10 @@
+{
+  "independent_unit": "patient",
+  "prediction_contexts_per_patient": 10,
+  "bootstrap_repetitions": 10000,
+  "bootstrap_seed": 20260824,
+  "bootstrap_interval_type": "percentile",
+  "bootstrap_quantile_interpolation": "linear",
+  "interval": [0.025, 0.975],
+  "strict_feasibility_tolerance_gy": 1e-9
+}

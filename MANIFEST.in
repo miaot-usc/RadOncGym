@@ -1,0 +1,4 @@
+include LICENSE ATTRIBUTION.md
+recursive-include configs *.json
+recursive-include examples *.py
+recursive-include THIRD_PARTY *.md LICENSE

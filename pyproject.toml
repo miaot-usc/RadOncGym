@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radoncgym"
+version = "0.1.0rc1"
+description = "RadOncGym dose-mimicking optimization benchmark"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  {name = "RadOncGym contributors"},
+]
+dependencies = [
+  "gymnasium>=1.0,<2",
+  "numpy>=1.24",
+  "scipy>=1.11,<2",
+]
+
+[project.optional-dependencies]
+surrogate = [
+  "joblib>=1.5,<2",
+  "scikit-learn==1.7.2",
+]
+optimize = [
+  "cma==4.4.4",
+  "scipy>=1.11,<2",
+]
+bayesian = [
+  "botorch==0.16.1",
+  "gpytorch==1.15.2",
+  "torch==2.12.0",
+]
+language = [
+  "openai==2.54.0",
+]
+multimodal = [
+  "matplotlib>=3.8,<4",
+  "pillow>=10,<13",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+radoncgym = ["assets/*.joblib", "assets/*.json"]

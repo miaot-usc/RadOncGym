@@ -1,0 +1,38 @@
+{
+  "input_features": 309,
+  "candidate_weight_features": 12,
+  "public_context_features": 297,
+  "ensemble_members": 24,
+  "development_attempts": 6400,
+  "development_timeouts": 342,
+  "fitting_rows": 4618,
+  "validation_rows": 1440,
+  "offline_design": {
+    "vectors_per_patient": 16,
+    "anchor": "all_ones",
+    "additional_vectors": 15,
+    "sequence": "independently_scrambled_sobol",
+    "space": "log_weight",
+    "reused_across_prediction_sets": true
+  },
+  "source_configurations": [
+    {"loss": "squared_error", "learning_rate": 0.03, "max_leaf_nodes": 31, "min_samples_leaf": 30, "l2_regularization": 3.0},
+    {"loss": "squared_error", "learning_rate": 0.05, "max_leaf_nodes": 15, "min_samples_leaf": 30, "l2_regularization": 3.0},
+    {"loss": "squared_error", "learning_rate": 0.10, "max_leaf_nodes": 31, "min_samples_leaf": 30, "l2_regularization": 3.0},
+    {"loss": "absolute_error", "learning_rate": 0.03, "max_leaf_nodes": 31, "min_samples_leaf": 30, "l2_regularization": 3.0},
+    {"loss": "absolute_error", "learning_rate": 0.10, "max_leaf_nodes": 15, "min_samples_leaf": 30, "l2_regularization": 0.3},
+    {"loss": "absolute_error", "learning_rate": 0.10, "max_leaf_nodes": 31, "min_samples_leaf": 30, "l2_regularization": 3.0}
+  ],
+  "seeds": [17, 29, 43, 71],
+  "max_iterations": 800,
+  "early_stopping": true,
+  "validation_fraction": 0.15,
+  "no_improvement_iterations": 50,
+  "internal_target": "candidate_minus_all_ones_clinical_violation",
+  "reported_improvement": "all_ones_minus_candidate",
+  "runtime_output_metric": "predicted_clinical_improvement_from_all_ones",
+  "runtime_output_direction": "higher_is_better",
+  "internal_target_exposed_at_runtime": false,
+  "uncertainty": "root_sum_square_ensemble_std_and_validation_absolute_residual_q90",
+  "validation_absolute_residual_q90_gy": 0.4922
+}

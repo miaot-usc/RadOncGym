@@ -1,0 +1,170 @@
+{
+  "three_solve_schedule": {
+    "turns": 16,
+    "surrogate_turns": 13,
+    "full_turns": [
+      14,
+      15,
+      16
+    ],
+    "task_id": "BudgetedMultiFidelity-v0",
+    "surrogate_on_terminal_turns": "reuse_screened_prediction"
+  },
+  "sixteen_solve_schedule": {
+    "turns": 16,
+    "full_turns": 16,
+    "task_id": "SequentialFullFixed16-v0"
+  },
+  "all_ones_anchor": {
+    "source": "precomputed",
+    "excluded_from_method_turns": true,
+    "excluded_from_full_solve_budget": true
+  },
+  "scalar_feedback": {
+    "metric": "clinical_improvement_from_all_ones",
+    "definition": "all_ones_minus_candidate",
+    "direction": "higher_is_better",
+    "cma_es_internal_transform": "negate_for_minimization",
+    "exact_gp_internal_transform": "none",
+    "saas_bo_internal_transform": "none",
+    "sobol_internal_transform": "not_applicable",
+    "source": "returned_fidelity"
+  },
+  "sobol": {
+    "scrambled": true,
+    "space": "log_weight",
+    "anchor": "precomputed_all_ones",
+    "anchor_is_action": false
+  },
+  "cma_es_3": {
+    "population_size": 11,
+    "sigma": 0.45,
+    "objective_source": "returned"
+  },
+  "cma_es_16": {
+    "population_size": 11,
+    "sigma": 0.45,
+    "objective_source": "returned"
+  },
+  "exact_gp_logei_3": {
+    "initial_design": 4,
+    "raw_samples": 256,
+    "restarts": 16,
+    "fit_max_iterations": 200,
+    "objective_source": "returned"
+  },
+  "exact_gp_logei_16": {
+    "initial_design": 4,
+    "raw_samples": 256,
+    "restarts": 16,
+    "fit_max_iterations": 200,
+    "objective_source": "returned"
+  },
+  "saas_bo_3": {
+    "initial_design": 4,
+    "raw_samples": 256,
+    "restarts": 16,
+    "nuts_warmup": 128,
+    "nuts_samples": 64,
+    "thinning": 4,
+    "max_tree_depth": 6,
+    "acquisition_mc_samples": 256,
+    "objective_source": "returned"
+  },
+  "saas_bo_16": {
+    "initial_design": 4,
+    "raw_samples": 256,
+    "restarts": 16,
+    "nuts_warmup": 128,
+    "nuts_samples": 64,
+    "thinning": 4,
+    "max_tree_depth": 6,
+    "acquisition_mc_samples": 256,
+    "objective_source": "returned"
+  },
+  "adaptive_logei": {
+    "turns": 16,
+    "maximum_full_solves": 3,
+    "anchor": "precomputed_all_ones_full_objective",
+    "anchor_excluded_from_full_solve_budget": true,
+    "absolute_anchor_exposed_to_controller": true,
+    "public_anchor_improvement": 0.0,
+    "bias_correction": "mean_full_improvement_minus_surrogate_improvement",
+    "forced_spend_when_remaining_turns_equal_remaining_budget": true,
+    "objective_source": "returned",
+    "promotion_evaluation": "surrogate_and_full_share_proposal_turn"
+  },
+  "extended_exact_gp_logei": {
+    "turns": 64,
+    "surrogate_turns": 61,
+    "full_turns": [
+      62,
+      63,
+      64
+    ]
+  },
+  "fixed_clinical_gpt": {
+    "turns": 16,
+    "surrogate_turns": 13,
+    "full_turns": [
+      14,
+      15,
+      16
+    ],
+    "task_id": "FixedClinicalOnly-v0",
+    "feedback": "scalar_clinical_only",
+    "memory_selection": "scalar_clinical_best_worst",
+    "surrogate_on_full_turns": false,
+    "stopping_enabled": false
+  },
+  "language_memory": [
+    "full_history_lossless_v1",
+    "criterion_response_contrast_v1",
+    "pareto_tradeoff_memory_v1"
+  ],
+  "language_memory_parameters": {
+    "full_history_lossless_v1": {
+      "selection": "all_prior_steps_chronological",
+      "maximum_steps": 16,
+      "drop_or_summarize": false,
+      "duplicates_retained": true,
+      "rebuild_each_turn": true
+    },
+    "criterion_response_contrast_v1": {
+      "recent_steps": 2,
+      "incumbents": [
+        "best_cheap",
+        "best_full"
+      ],
+      "dominant_criterion_source": "most_recent_successful_full_solve",
+      "dominant_criterion_rule": "largest_strictly_positive_violation",
+      "dominant_criterion_tie_break": "lexicographically_larger_name",
+      "contrast_eligibility": "successful_full_solves_only",
+      "best_rule": "minimum_violation_then_earlier_step",
+      "worst_rule": "maximum_violation_then_earlier_step",
+      "scalar_control_rule": "maximum_or_minimum_full_clinical_improvement_then_earlier_step",
+      "selected_step_union": true,
+      "rebuild_each_turn": true
+    },
+    "pareto_tradeoff_memory_v1": {
+      "base_view": "verified_response_memory_over_full_history",
+      "frontier_eligibility": "successful_full_solves_only",
+      "objectives": [
+        "mean_protocol_violation_gy",
+        "nonnegative_individual_criterion_violations"
+      ],
+      "comparison_keys": "intersection_across_eligible_candidates",
+      "dominance": "no_worse_on_all_and_strictly_better_on_at_least_one",
+      "archive_size_cap": null,
+      "equal_vectors_retained": true,
+      "duplicates_retained_when_nondominated": true,
+      "frontier_order": "chronological",
+      "rebuild_each_turn": true
+    }
+  },
+  "language_roles": [
+    "direct",
+    "evaluator_planner_decomposition_v1",
+    "anticipatory_criterion_critic_v1"
+  ]
+}

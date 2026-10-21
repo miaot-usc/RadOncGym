@@ -1,0 +1,36 @@
+{
+  "gpt": {
+    "model": "gpt-5.6-sol",
+    "route": "codex_cli",
+    "client_version": "0.147.0",
+    "reasoning": "medium",
+    "maximum_transport_attempts": 7
+  },
+  "claude": {
+    "model": "claude-sonnet-5",
+    "route": "claude_code_cli",
+    "client_version": "2.1.233",
+    "reasoning": "medium",
+    "maximum_transport_attempts": 1,
+    "response_repair": "none"
+  },
+  "qwen": {
+    "model": "qwen3.6-27b",
+    "route": "dashscope_openai_compatible_beijing",
+    "client": "openai_python",
+    "client_version": "2.54.0",
+    "thinking_enabled": true,
+    "thinking_budget": 4096,
+    "maximum_transport_attempts": 3
+  },
+  "temperature": null,
+  "top_p": null,
+  "max_output_tokens": null,
+  "shared_memory": "criterion_response_contrast_v1",
+  "shared_role": "anticipatory_criterion_critic_v1",
+  "rendered_dvh_feedback": true,
+  "public_support_modules": [
+    "prediction_goal_deviation_v1"
+  ],
+  "rendered_dvh_availability": "after_successful_full_solve_only"
+}

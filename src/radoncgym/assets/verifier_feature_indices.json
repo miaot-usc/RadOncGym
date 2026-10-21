@@ -1,0 +1,2782 @@
+{
+  "candidate_weight_features": [
+    {
+      "index": 0,
+      "name": "weight:PTV56_coverage"
+    },
+    {
+      "index": 1,
+      "name": "weight:PTV63_coverage"
+    },
+    {
+      "index": 2,
+      "name": "weight:PTV70_coverage"
+    },
+    {
+      "index": 3,
+      "name": "weight:Brainstem_sparing"
+    },
+    {
+      "index": 4,
+      "name": "weight:SpinalCord_sparing"
+    },
+    {
+      "index": 5,
+      "name": "weight:RightParotid_sparing"
+    },
+    {
+      "index": 6,
+      "name": "weight:LeftParotid_sparing"
+    },
+    {
+      "index": 7,
+      "name": "weight:Esophagus_sparing"
+    },
+    {
+      "index": 8,
+      "name": "weight:Larynx_sparing"
+    },
+    {
+      "index": 9,
+      "name": "weight:Mandible_sparing"
+    },
+    {
+      "index": 10,
+      "name": "weight:ring_falloff"
+    },
+    {
+      "index": 11,
+      "name": "weight:posterior_neck_sparing"
+    }
+  ],
+  "candidate_weight_length": 12,
+  "indexing": "zero_based",
+  "public_context_features": [
+    {
+      "index": 0,
+      "name": "anatomy:voxel_dimensions_mm:x",
+      "verifier_index": 12
+    },
+    {
+      "index": 1,
+      "name": "anatomy:voxel_dimensions_mm:y",
+      "verifier_index": 13
+    },
+    {
+      "index": 2,
+      "name": "anatomy:voxel_dimensions_mm:z",
+      "verifier_index": 14
+    },
+    {
+      "index": 3,
+      "name": "anatomy:voxel_volume_cc",
+      "verifier_index": 15
+    },
+    {
+      "index": 4,
+      "name": "anatomy:possible_dose_voxel_count",
+      "verifier_index": 16
+    },
+    {
+      "index": 5,
+      "name": "anatomy:possible_dose_volume_cc",
+      "verifier_index": 17
+    },
+    {
+      "index": 6,
+      "name": "anatomy:ct_stored_grid:min",
+      "verifier_index": 18
+    },
+    {
+      "index": 7,
+      "name": "anatomy:ct_stored_grid:mean",
+      "verifier_index": 19
+    },
+    {
+      "index": 8,
+      "name": "anatomy:ct_stored_grid:max",
+      "verifier_index": 20
+    },
+    {
+      "index": 9,
+      "name": "anatomy:ct_stored_grid:p01",
+      "verifier_index": 21
+    },
+    {
+      "index": 10,
+      "name": "anatomy:ct_stored_grid:p05",
+      "verifier_index": 22
+    },
+    {
+      "index": 11,
+      "name": "anatomy:ct_stored_grid:p50",
+      "verifier_index": 23
+    },
+    {
+      "index": 12,
+      "name": "anatomy:ct_stored_grid:p95",
+      "verifier_index": 24
+    },
+    {
+      "index": 13,
+      "name": "anatomy:ct_stored_grid:p99",
+      "verifier_index": 25
+    },
+    {
+      "index": 14,
+      "name": "prediction:possible_dose_mask:min",
+      "verifier_index": 26
+    },
+    {
+      "index": 15,
+      "name": "prediction:possible_dose_mask:mean",
+      "verifier_index": 27
+    },
+    {
+      "index": 16,
+      "name": "prediction:possible_dose_mask:max",
+      "verifier_index": 28
+    },
+    {
+      "index": 17,
+      "name": "prediction:possible_dose_mask:p01",
+      "verifier_index": 29
+    },
+    {
+      "index": 18,
+      "name": "prediction:possible_dose_mask:p05",
+      "verifier_index": 30
+    },
+    {
+      "index": 19,
+      "name": "prediction:possible_dose_mask:p50",
+      "verifier_index": 31
+    },
+    {
+      "index": 20,
+      "name": "prediction:possible_dose_mask:p95",
+      "verifier_index": 32
+    },
+    {
+      "index": 21,
+      "name": "prediction:possible_dose_mask:p99",
+      "verifier_index": 33
+    },
+    {
+      "index": 22,
+      "name": "roi:Brainstem:present",
+      "verifier_index": 34
+    },
+    {
+      "index": 23,
+      "name": "roi:Brainstem:voxel_count",
+      "verifier_index": 35
+    },
+    {
+      "index": 24,
+      "name": "roi:Brainstem:volume_cc",
+      "verifier_index": 36
+    },
+    {
+      "index": 25,
+      "name": "roi:Brainstem:centroid_fraction:x",
+      "verifier_index": 37
+    },
+    {
+      "index": 26,
+      "name": "roi:Brainstem:centroid_fraction:y",
+      "verifier_index": 38
+    },
+    {
+      "index": 27,
+      "name": "roi:Brainstem:centroid_fraction:z",
+      "verifier_index": 39
+    },
+    {
+      "index": 28,
+      "name": "roi:Brainstem:bounding_box_mm:x",
+      "verifier_index": 40
+    },
+    {
+      "index": 29,
+      "name": "roi:Brainstem:bounding_box_mm:y",
+      "verifier_index": 41
+    },
+    {
+      "index": 30,
+      "name": "roi:Brainstem:bounding_box_mm:z",
+      "verifier_index": 42
+    },
+    {
+      "index": 31,
+      "name": "roi:Brainstem:predicted_dose:min",
+      "verifier_index": 43
+    },
+    {
+      "index": 32,
+      "name": "roi:Brainstem:predicted_dose:mean",
+      "verifier_index": 44
+    },
+    {
+      "index": 33,
+      "name": "roi:Brainstem:predicted_dose:max",
+      "verifier_index": 45
+    },
+    {
+      "index": 34,
+      "name": "roi:Brainstem:predicted_dose:p01",
+      "verifier_index": 46
+    },
+    {
+      "index": 35,
+      "name": "roi:Brainstem:predicted_dose:p05",
+      "verifier_index": 47
+    },
+    {
+      "index": 36,
+      "name": "roi:Brainstem:predicted_dose:p50",
+      "verifier_index": 48
+    },
+    {
+      "index": 37,
+      "name": "roi:Brainstem:predicted_dose:p95",
+      "verifier_index": 49
+    },
+    {
+      "index": 38,
+      "name": "roi:Brainstem:predicted_dose:p99",
+      "verifier_index": 50
+    },
+    {
+      "index": 39,
+      "name": "roi:SpinalCord:present",
+      "verifier_index": 51
+    },
+    {
+      "index": 40,
+      "name": "roi:SpinalCord:voxel_count",
+      "verifier_index": 52
+    },
+    {
+      "index": 41,
+      "name": "roi:SpinalCord:volume_cc",
+      "verifier_index": 53
+    },
+    {
+      "index": 42,
+      "name": "roi:SpinalCord:centroid_fraction:x",
+      "verifier_index": 54
+    },
+    {
+      "index": 43,
+      "name": "roi:SpinalCord:centroid_fraction:y",
+      "verifier_index": 55
+    },
+    {
+      "index": 44,
+      "name": "roi:SpinalCord:centroid_fraction:z",
+      "verifier_index": 56
+    },
+    {
+      "index": 45,
+      "name": "roi:SpinalCord:bounding_box_mm:x",
+      "verifier_index": 57
+    },
+    {
+      "index": 46,
+      "name": "roi:SpinalCord:bounding_box_mm:y",
+      "verifier_index": 58
+    },
+    {
+      "index": 47,
+      "name": "roi:SpinalCord:bounding_box_mm:z",
+      "verifier_index": 59
+    },
+    {
+      "index": 48,
+      "name": "roi:SpinalCord:predicted_dose:min",
+      "verifier_index": 60
+    },
+    {
+      "index": 49,
+      "name": "roi:SpinalCord:predicted_dose:mean",
+      "verifier_index": 61
+    },
+    {
+      "index": 50,
+      "name": "roi:SpinalCord:predicted_dose:max",
+      "verifier_index": 62
+    },
+    {
+      "index": 51,
+      "name": "roi:SpinalCord:predicted_dose:p01",
+      "verifier_index": 63
+    },
+    {
+      "index": 52,
+      "name": "roi:SpinalCord:predicted_dose:p05",
+      "verifier_index": 64
+    },
+    {
+      "index": 53,
+      "name": "roi:SpinalCord:predicted_dose:p50",
+      "verifier_index": 65
+    },
+    {
+      "index": 54,
+      "name": "roi:SpinalCord:predicted_dose:p95",
+      "verifier_index": 66
+    },
+    {
+      "index": 55,
+      "name": "roi:SpinalCord:predicted_dose:p99",
+      "verifier_index": 67
+    },
+    {
+      "index": 56,
+      "name": "roi:RightParotid:present",
+      "verifier_index": 68
+    },
+    {
+      "index": 57,
+      "name": "roi:RightParotid:voxel_count",
+      "verifier_index": 69
+    },
+    {
+      "index": 58,
+      "name": "roi:RightParotid:volume_cc",
+      "verifier_index": 70
+    },
+    {
+      "index": 59,
+      "name": "roi:RightParotid:centroid_fraction:x",
+      "verifier_index": 71
+    },
+    {
+      "index": 60,
+      "name": "roi:RightParotid:centroid_fraction:y",
+      "verifier_index": 72
+    },
+    {
+      "index": 61,
+      "name": "roi:RightParotid:centroid_fraction:z",
+      "verifier_index": 73
+    },
+    {
+      "index": 62,
+      "name": "roi:RightParotid:bounding_box_mm:x",
+      "verifier_index": 74
+    },
+    {
+      "index": 63,
+      "name": "roi:RightParotid:bounding_box_mm:y",
+      "verifier_index": 75
+    },
+    {
+      "index": 64,
+      "name": "roi:RightParotid:bounding_box_mm:z",
+      "verifier_index": 76
+    },
+    {
+      "index": 65,
+      "name": "roi:RightParotid:predicted_dose:min",
+      "verifier_index": 77
+    },
+    {
+      "index": 66,
+      "name": "roi:RightParotid:predicted_dose:mean",
+      "verifier_index": 78
+    },
+    {
+      "index": 67,
+      "name": "roi:RightParotid:predicted_dose:max",
+      "verifier_index": 79
+    },
+    {
+      "index": 68,
+      "name": "roi:RightParotid:predicted_dose:p01",
+      "verifier_index": 80
+    },
+    {
+      "index": 69,
+      "name": "roi:RightParotid:predicted_dose:p05",
+      "verifier_index": 81
+    },
+    {
+      "index": 70,
+      "name": "roi:RightParotid:predicted_dose:p50",
+      "verifier_index": 82
+    },
+    {
+      "index": 71,
+      "name": "roi:RightParotid:predicted_dose:p95",
+      "verifier_index": 83
+    },
+    {
+      "index": 72,
+      "name": "roi:RightParotid:predicted_dose:p99",
+      "verifier_index": 84
+    },
+    {
+      "index": 73,
+      "name": "roi:LeftParotid:present",
+      "verifier_index": 85
+    },
+    {
+      "index": 74,
+      "name": "roi:LeftParotid:voxel_count",
+      "verifier_index": 86
+    },
+    {
+      "index": 75,
+      "name": "roi:LeftParotid:volume_cc",
+      "verifier_index": 87
+    },
+    {
+      "index": 76,
+      "name": "roi:LeftParotid:centroid_fraction:x",
+      "verifier_index": 88
+    },
+    {
+      "index": 77,
+      "name": "roi:LeftParotid:centroid_fraction:y",
+      "verifier_index": 89
+    },
+    {
+      "index": 78,
+      "name": "roi:LeftParotid:centroid_fraction:z",
+      "verifier_index": 90
+    },
+    {
+      "index": 79,
+      "name": "roi:LeftParotid:bounding_box_mm:x",
+      "verifier_index": 91
+    },
+    {
+      "index": 80,
+      "name": "roi:LeftParotid:bounding_box_mm:y",
+      "verifier_index": 92
+    },
+    {
+      "index": 81,
+      "name": "roi:LeftParotid:bounding_box_mm:z",
+      "verifier_index": 93
+    },
+    {
+      "index": 82,
+      "name": "roi:LeftParotid:predicted_dose:min",
+      "verifier_index": 94
+    },
+    {
+      "index": 83,
+      "name": "roi:LeftParotid:predicted_dose:mean",
+      "verifier_index": 95
+    },
+    {
+      "index": 84,
+      "name": "roi:LeftParotid:predicted_dose:max",
+      "verifier_index": 96
+    },
+    {
+      "index": 85,
+      "name": "roi:LeftParotid:predicted_dose:p01",
+      "verifier_index": 97
+    },
+    {
+      "index": 86,
+      "name": "roi:LeftParotid:predicted_dose:p05",
+      "verifier_index": 98
+    },
+    {
+      "index": 87,
+      "name": "roi:LeftParotid:predicted_dose:p50",
+      "verifier_index": 99
+    },
+    {
+      "index": 88,
+      "name": "roi:LeftParotid:predicted_dose:p95",
+      "verifier_index": 100
+    },
+    {
+      "index": 89,
+      "name": "roi:LeftParotid:predicted_dose:p99",
+      "verifier_index": 101
+    },
+    {
+      "index": 90,
+      "name": "roi:Esophagus:present",
+      "verifier_index": 102
+    },
+    {
+      "index": 91,
+      "name": "roi:Esophagus:voxel_count",
+      "verifier_index": 103
+    },
+    {
+      "index": 92,
+      "name": "roi:Esophagus:volume_cc",
+      "verifier_index": 104
+    },
+    {
+      "index": 93,
+      "name": "roi:Esophagus:centroid_fraction:x",
+      "verifier_index": 105
+    },
+    {
+      "index": 94,
+      "name": "roi:Esophagus:centroid_fraction:y",
+      "verifier_index": 106
+    },
+    {
+      "index": 95,
+      "name": "roi:Esophagus:centroid_fraction:z",
+      "verifier_index": 107
+    },
+    {
+      "index": 96,
+      "name": "roi:Esophagus:bounding_box_mm:x",
+      "verifier_index": 108
+    },
+    {
+      "index": 97,
+      "name": "roi:Esophagus:bounding_box_mm:y",
+      "verifier_index": 109
+    },
+    {
+      "index": 98,
+      "name": "roi:Esophagus:bounding_box_mm:z",
+      "verifier_index": 110
+    },
+    {
+      "index": 99,
+      "name": "roi:Esophagus:predicted_dose:min",
+      "verifier_index": 111
+    },
+    {
+      "index": 100,
+      "name": "roi:Esophagus:predicted_dose:mean",
+      "verifier_index": 112
+    },
+    {
+      "index": 101,
+      "name": "roi:Esophagus:predicted_dose:max",
+      "verifier_index": 113
+    },
+    {
+      "index": 102,
+      "name": "roi:Esophagus:predicted_dose:p01",
+      "verifier_index": 114
+    },
+    {
+      "index": 103,
+      "name": "roi:Esophagus:predicted_dose:p05",
+      "verifier_index": 115
+    },
+    {
+      "index": 104,
+      "name": "roi:Esophagus:predicted_dose:p50",
+      "verifier_index": 116
+    },
+    {
+      "index": 105,
+      "name": "roi:Esophagus:predicted_dose:p95",
+      "verifier_index": 117
+    },
+    {
+      "index": 106,
+      "name": "roi:Esophagus:predicted_dose:p99",
+      "verifier_index": 118
+    },
+    {
+      "index": 107,
+      "name": "roi:Larynx:present",
+      "verifier_index": 119
+    },
+    {
+      "index": 108,
+      "name": "roi:Larynx:voxel_count",
+      "verifier_index": 120
+    },
+    {
+      "index": 109,
+      "name": "roi:Larynx:volume_cc",
+      "verifier_index": 121
+    },
+    {
+      "index": 110,
+      "name": "roi:Larynx:centroid_fraction:x",
+      "verifier_index": 122
+    },
+    {
+      "index": 111,
+      "name": "roi:Larynx:centroid_fraction:y",
+      "verifier_index": 123
+    },
+    {
+      "index": 112,
+      "name": "roi:Larynx:centroid_fraction:z",
+      "verifier_index": 124
+    },
+    {
+      "index": 113,
+      "name": "roi:Larynx:bounding_box_mm:x",
+      "verifier_index": 125
+    },
+    {
+      "index": 114,
+      "name": "roi:Larynx:bounding_box_mm:y",
+      "verifier_index": 126
+    },
+    {
+      "index": 115,
+      "name": "roi:Larynx:bounding_box_mm:z",
+      "verifier_index": 127
+    },
+    {
+      "index": 116,
+      "name": "roi:Larynx:predicted_dose:min",
+      "verifier_index": 128
+    },
+    {
+      "index": 117,
+      "name": "roi:Larynx:predicted_dose:mean",
+      "verifier_index": 129
+    },
+    {
+      "index": 118,
+      "name": "roi:Larynx:predicted_dose:max",
+      "verifier_index": 130
+    },
+    {
+      "index": 119,
+      "name": "roi:Larynx:predicted_dose:p01",
+      "verifier_index": 131
+    },
+    {
+      "index": 120,
+      "name": "roi:Larynx:predicted_dose:p05",
+      "verifier_index": 132
+    },
+    {
+      "index": 121,
+      "name": "roi:Larynx:predicted_dose:p50",
+      "verifier_index": 133
+    },
+    {
+      "index": 122,
+      "name": "roi:Larynx:predicted_dose:p95",
+      "verifier_index": 134
+    },
+    {
+      "index": 123,
+      "name": "roi:Larynx:predicted_dose:p99",
+      "verifier_index": 135
+    },
+    {
+      "index": 124,
+      "name": "roi:Mandible:present",
+      "verifier_index": 136
+    },
+    {
+      "index": 125,
+      "name": "roi:Mandible:voxel_count",
+      "verifier_index": 137
+    },
+    {
+      "index": 126,
+      "name": "roi:Mandible:volume_cc",
+      "verifier_index": 138
+    },
+    {
+      "index": 127,
+      "name": "roi:Mandible:centroid_fraction:x",
+      "verifier_index": 139
+    },
+    {
+      "index": 128,
+      "name": "roi:Mandible:centroid_fraction:y",
+      "verifier_index": 140
+    },
+    {
+      "index": 129,
+      "name": "roi:Mandible:centroid_fraction:z",
+      "verifier_index": 141
+    },
+    {
+      "index": 130,
+      "name": "roi:Mandible:bounding_box_mm:x",
+      "verifier_index": 142
+    },
+    {
+      "index": 131,
+      "name": "roi:Mandible:bounding_box_mm:y",
+      "verifier_index": 143
+    },
+    {
+      "index": 132,
+      "name": "roi:Mandible:bounding_box_mm:z",
+      "verifier_index": 144
+    },
+    {
+      "index": 133,
+      "name": "roi:Mandible:predicted_dose:min",
+      "verifier_index": 145
+    },
+    {
+      "index": 134,
+      "name": "roi:Mandible:predicted_dose:mean",
+      "verifier_index": 146
+    },
+    {
+      "index": 135,
+      "name": "roi:Mandible:predicted_dose:max",
+      "verifier_index": 147
+    },
+    {
+      "index": 136,
+      "name": "roi:Mandible:predicted_dose:p01",
+      "verifier_index": 148
+    },
+    {
+      "index": 137,
+      "name": "roi:Mandible:predicted_dose:p05",
+      "verifier_index": 149
+    },
+    {
+      "index": 138,
+      "name": "roi:Mandible:predicted_dose:p50",
+      "verifier_index": 150
+    },
+    {
+      "index": 139,
+      "name": "roi:Mandible:predicted_dose:p95",
+      "verifier_index": 151
+    },
+    {
+      "index": 140,
+      "name": "roi:Mandible:predicted_dose:p99",
+      "verifier_index": 152
+    },
+    {
+      "index": 141,
+      "name": "roi:PTV56:present",
+      "verifier_index": 153
+    },
+    {
+      "index": 142,
+      "name": "roi:PTV56:voxel_count",
+      "verifier_index": 154
+    },
+    {
+      "index": 143,
+      "name": "roi:PTV56:volume_cc",
+      "verifier_index": 155
+    },
+    {
+      "index": 144,
+      "name": "roi:PTV56:centroid_fraction:x",
+      "verifier_index": 156
+    },
+    {
+      "index": 145,
+      "name": "roi:PTV56:centroid_fraction:y",
+      "verifier_index": 157
+    },
+    {
+      "index": 146,
+      "name": "roi:PTV56:centroid_fraction:z",
+      "verifier_index": 158
+    },
+    {
+      "index": 147,
+      "name": "roi:PTV56:bounding_box_mm:x",
+      "verifier_index": 159
+    },
+    {
+      "index": 148,
+      "name": "roi:PTV56:bounding_box_mm:y",
+      "verifier_index": 160
+    },
+    {
+      "index": 149,
+      "name": "roi:PTV56:bounding_box_mm:z",
+      "verifier_index": 161
+    },
+    {
+      "index": 150,
+      "name": "roi:PTV56:predicted_dose:min",
+      "verifier_index": 162
+    },
+    {
+      "index": 151,
+      "name": "roi:PTV56:predicted_dose:mean",
+      "verifier_index": 163
+    },
+    {
+      "index": 152,
+      "name": "roi:PTV56:predicted_dose:max",
+      "verifier_index": 164
+    },
+    {
+      "index": 153,
+      "name": "roi:PTV56:predicted_dose:p01",
+      "verifier_index": 165
+    },
+    {
+      "index": 154,
+      "name": "roi:PTV56:predicted_dose:p05",
+      "verifier_index": 166
+    },
+    {
+      "index": 155,
+      "name": "roi:PTV56:predicted_dose:p50",
+      "verifier_index": 167
+    },
+    {
+      "index": 156,
+      "name": "roi:PTV56:predicted_dose:p95",
+      "verifier_index": 168
+    },
+    {
+      "index": 157,
+      "name": "roi:PTV56:predicted_dose:p99",
+      "verifier_index": 169
+    },
+    {
+      "index": 158,
+      "name": "roi:PTV63:present",
+      "verifier_index": 170
+    },
+    {
+      "index": 159,
+      "name": "roi:PTV63:voxel_count",
+      "verifier_index": 171
+    },
+    {
+      "index": 160,
+      "name": "roi:PTV63:volume_cc",
+      "verifier_index": 172
+    },
+    {
+      "index": 161,
+      "name": "roi:PTV63:centroid_fraction:x",
+      "verifier_index": 173
+    },
+    {
+      "index": 162,
+      "name": "roi:PTV63:centroid_fraction:y",
+      "verifier_index": 174
+    },
+    {
+      "index": 163,
+      "name": "roi:PTV63:centroid_fraction:z",
+      "verifier_index": 175
+    },
+    {
+      "index": 164,
+      "name": "roi:PTV63:bounding_box_mm:x",
+      "verifier_index": 176
+    },
+    {
+      "index": 165,
+      "name": "roi:PTV63:bounding_box_mm:y",
+      "verifier_index": 177
+    },
+    {
+      "index": 166,
+      "name": "roi:PTV63:bounding_box_mm:z",
+      "verifier_index": 178
+    },
+    {
+      "index": 167,
+      "name": "roi:PTV63:predicted_dose:min",
+      "verifier_index": 179
+    },
+    {
+      "index": 168,
+      "name": "roi:PTV63:predicted_dose:mean",
+      "verifier_index": 180
+    },
+    {
+      "index": 169,
+      "name": "roi:PTV63:predicted_dose:max",
+      "verifier_index": 181
+    },
+    {
+      "index": 170,
+      "name": "roi:PTV63:predicted_dose:p01",
+      "verifier_index": 182
+    },
+    {
+      "index": 171,
+      "name": "roi:PTV63:predicted_dose:p05",
+      "verifier_index": 183
+    },
+    {
+      "index": 172,
+      "name": "roi:PTV63:predicted_dose:p50",
+      "verifier_index": 184
+    },
+    {
+      "index": 173,
+      "name": "roi:PTV63:predicted_dose:p95",
+      "verifier_index": 185
+    },
+    {
+      "index": 174,
+      "name": "roi:PTV63:predicted_dose:p99",
+      "verifier_index": 186
+    },
+    {
+      "index": 175,
+      "name": "roi:PTV70:present",
+      "verifier_index": 187
+    },
+    {
+      "index": 176,
+      "name": "roi:PTV70:voxel_count",
+      "verifier_index": 188
+    },
+    {
+      "index": 177,
+      "name": "roi:PTV70:volume_cc",
+      "verifier_index": 189
+    },
+    {
+      "index": 178,
+      "name": "roi:PTV70:centroid_fraction:x",
+      "verifier_index": 190
+    },
+    {
+      "index": 179,
+      "name": "roi:PTV70:centroid_fraction:y",
+      "verifier_index": 191
+    },
+    {
+      "index": 180,
+      "name": "roi:PTV70:centroid_fraction:z",
+      "verifier_index": 192
+    },
+    {
+      "index": 181,
+      "name": "roi:PTV70:bounding_box_mm:x",
+      "verifier_index": 193
+    },
+    {
+      "index": 182,
+      "name": "roi:PTV70:bounding_box_mm:y",
+      "verifier_index": 194
+    },
+    {
+      "index": 183,
+      "name": "roi:PTV70:bounding_box_mm:z",
+      "verifier_index": 195
+    },
+    {
+      "index": 184,
+      "name": "roi:PTV70:predicted_dose:min",
+      "verifier_index": 196
+    },
+    {
+      "index": 185,
+      "name": "roi:PTV70:predicted_dose:mean",
+      "verifier_index": 197
+    },
+    {
+      "index": 186,
+      "name": "roi:PTV70:predicted_dose:max",
+      "verifier_index": 198
+    },
+    {
+      "index": 187,
+      "name": "roi:PTV70:predicted_dose:p01",
+      "verifier_index": 199
+    },
+    {
+      "index": 188,
+      "name": "roi:PTV70:predicted_dose:p05",
+      "verifier_index": 200
+    },
+    {
+      "index": 189,
+      "name": "roi:PTV70:predicted_dose:p50",
+      "verifier_index": 201
+    },
+    {
+      "index": 190,
+      "name": "roi:PTV70:predicted_dose:p95",
+      "verifier_index": 202
+    },
+    {
+      "index": 191,
+      "name": "roi:PTV70:predicted_dose:p99",
+      "verifier_index": 203
+    },
+    {
+      "index": 192,
+      "name": "overlap:Brainstem:PTV56:intersection_cc",
+      "verifier_index": 204
+    },
+    {
+      "index": 193,
+      "name": "overlap:Brainstem:PTV56:fraction_of_first",
+      "verifier_index": 205
+    },
+    {
+      "index": 194,
+      "name": "overlap:Brainstem:PTV56:fraction_of_second",
+      "verifier_index": 206
+    },
+    {
+      "index": 195,
+      "name": "overlap:Brainstem:PTV56:dice",
+      "verifier_index": 207
+    },
+    {
+      "index": 196,
+      "name": "overlap:Brainstem:PTV63:intersection_cc",
+      "verifier_index": 208
+    },
+    {
+      "index": 197,
+      "name": "overlap:Brainstem:PTV63:fraction_of_first",
+      "verifier_index": 209
+    },
+    {
+      "index": 198,
+      "name": "overlap:Brainstem:PTV63:fraction_of_second",
+      "verifier_index": 210
+    },
+    {
+      "index": 199,
+      "name": "overlap:Brainstem:PTV63:dice",
+      "verifier_index": 211
+    },
+    {
+      "index": 200,
+      "name": "overlap:Brainstem:PTV70:intersection_cc",
+      "verifier_index": 212
+    },
+    {
+      "index": 201,
+      "name": "overlap:Brainstem:PTV70:fraction_of_first",
+      "verifier_index": 213
+    },
+    {
+      "index": 202,
+      "name": "overlap:Brainstem:PTV70:fraction_of_second",
+      "verifier_index": 214
+    },
+    {
+      "index": 203,
+      "name": "overlap:Brainstem:PTV70:dice",
+      "verifier_index": 215
+    },
+    {
+      "index": 204,
+      "name": "overlap:SpinalCord:PTV56:intersection_cc",
+      "verifier_index": 216
+    },
+    {
+      "index": 205,
+      "name": "overlap:SpinalCord:PTV56:fraction_of_first",
+      "verifier_index": 217
+    },
+    {
+      "index": 206,
+      "name": "overlap:SpinalCord:PTV56:fraction_of_second",
+      "verifier_index": 218
+    },
+    {
+      "index": 207,
+      "name": "overlap:SpinalCord:PTV56:dice",
+      "verifier_index": 219
+    },
+    {
+      "index": 208,
+      "name": "overlap:SpinalCord:PTV63:intersection_cc",
+      "verifier_index": 220
+    },
+    {
+      "index": 209,
+      "name": "overlap:SpinalCord:PTV63:fraction_of_first",
+      "verifier_index": 221
+    },
+    {
+      "index": 210,
+      "name": "overlap:SpinalCord:PTV63:fraction_of_second",
+      "verifier_index": 222
+    },
+    {
+      "index": 211,
+      "name": "overlap:SpinalCord:PTV63:dice",
+      "verifier_index": 223
+    },
+    {
+      "index": 212,
+      "name": "overlap:SpinalCord:PTV70:intersection_cc",
+      "verifier_index": 224
+    },
+    {
+      "index": 213,
+      "name": "overlap:SpinalCord:PTV70:fraction_of_first",
+      "verifier_index": 225
+    },
+    {
+      "index": 214,
+      "name": "overlap:SpinalCord:PTV70:fraction_of_second",
+      "verifier_index": 226
+    },
+    {
+      "index": 215,
+      "name": "overlap:SpinalCord:PTV70:dice",
+      "verifier_index": 227
+    },
+    {
+      "index": 216,
+      "name": "overlap:RightParotid:PTV56:intersection_cc",
+      "verifier_index": 228
+    },
+    {
+      "index": 217,
+      "name": "overlap:RightParotid:PTV56:fraction_of_first",
+      "verifier_index": 229
+    },
+    {
+      "index": 218,
+      "name": "overlap:RightParotid:PTV56:fraction_of_second",
+      "verifier_index": 230
+    },
+    {
+      "index": 219,
+      "name": "overlap:RightParotid:PTV56:dice",
+      "verifier_index": 231
+    },
+    {
+      "index": 220,
+      "name": "overlap:RightParotid:PTV63:intersection_cc",
+      "verifier_index": 232
+    },
+    {
+      "index": 221,
+      "name": "overlap:RightParotid:PTV63:fraction_of_first",
+      "verifier_index": 233
+    },
+    {
+      "index": 222,
+      "name": "overlap:RightParotid:PTV63:fraction_of_second",
+      "verifier_index": 234
+    },
+    {
+      "index": 223,
+      "name": "overlap:RightParotid:PTV63:dice",
+      "verifier_index": 235
+    },
+    {
+      "index": 224,
+      "name": "overlap:RightParotid:PTV70:intersection_cc",
+      "verifier_index": 236
+    },
+    {
+      "index": 225,
+      "name": "overlap:RightParotid:PTV70:fraction_of_first",
+      "verifier_index": 237
+    },
+    {
+      "index": 226,
+      "name": "overlap:RightParotid:PTV70:fraction_of_second",
+      "verifier_index": 238
+    },
+    {
+      "index": 227,
+      "name": "overlap:RightParotid:PTV70:dice",
+      "verifier_index": 239
+    },
+    {
+      "index": 228,
+      "name": "overlap:LeftParotid:PTV56:intersection_cc",
+      "verifier_index": 240
+    },
+    {
+      "index": 229,
+      "name": "overlap:LeftParotid:PTV56:fraction_of_first",
+      "verifier_index": 241
+    },
+    {
+      "index": 230,
+      "name": "overlap:LeftParotid:PTV56:fraction_of_second",
+      "verifier_index": 242
+    },
+    {
+      "index": 231,
+      "name": "overlap:LeftParotid:PTV56:dice",
+      "verifier_index": 243
+    },
+    {
+      "index": 232,
+      "name": "overlap:LeftParotid:PTV63:intersection_cc",
+      "verifier_index": 244
+    },
+    {
+      "index": 233,
+      "name": "overlap:LeftParotid:PTV63:fraction_of_first",
+      "verifier_index": 245
+    },
+    {
+      "index": 234,
+      "name": "overlap:LeftParotid:PTV63:fraction_of_second",
+      "verifier_index": 246
+    },
+    {
+      "index": 235,
+      "name": "overlap:LeftParotid:PTV63:dice",
+      "verifier_index": 247
+    },
+    {
+      "index": 236,
+      "name": "overlap:LeftParotid:PTV70:intersection_cc",
+      "verifier_index": 248
+    },
+    {
+      "index": 237,
+      "name": "overlap:LeftParotid:PTV70:fraction_of_first",
+      "verifier_index": 249
+    },
+    {
+      "index": 238,
+      "name": "overlap:LeftParotid:PTV70:fraction_of_second",
+      "verifier_index": 250
+    },
+    {
+      "index": 239,
+      "name": "overlap:LeftParotid:PTV70:dice",
+      "verifier_index": 251
+    },
+    {
+      "index": 240,
+      "name": "overlap:Esophagus:PTV56:intersection_cc",
+      "verifier_index": 252
+    },
+    {
+      "index": 241,
+      "name": "overlap:Esophagus:PTV56:fraction_of_first",
+      "verifier_index": 253
+    },
+    {
+      "index": 242,
+      "name": "overlap:Esophagus:PTV56:fraction_of_second",
+      "verifier_index": 254
+    },
+    {
+      "index": 243,
+      "name": "overlap:Esophagus:PTV56:dice",
+      "verifier_index": 255
+    },
+    {
+      "index": 244,
+      "name": "overlap:Esophagus:PTV63:intersection_cc",
+      "verifier_index": 256
+    },
+    {
+      "index": 245,
+      "name": "overlap:Esophagus:PTV63:fraction_of_first",
+      "verifier_index": 257
+    },
+    {
+      "index": 246,
+      "name": "overlap:Esophagus:PTV63:fraction_of_second",
+      "verifier_index": 258
+    },
+    {
+      "index": 247,
+      "name": "overlap:Esophagus:PTV63:dice",
+      "verifier_index": 259
+    },
+    {
+      "index": 248,
+      "name": "overlap:Esophagus:PTV70:intersection_cc",
+      "verifier_index": 260
+    },
+    {
+      "index": 249,
+      "name": "overlap:Esophagus:PTV70:fraction_of_first",
+      "verifier_index": 261
+    },
+    {
+      "index": 250,
+      "name": "overlap:Esophagus:PTV70:fraction_of_second",
+      "verifier_index": 262
+    },
+    {
+      "index": 251,
+      "name": "overlap:Esophagus:PTV70:dice",
+      "verifier_index": 263
+    },
+    {
+      "index": 252,
+      "name": "overlap:Larynx:PTV56:intersection_cc",
+      "verifier_index": 264
+    },
+    {
+      "index": 253,
+      "name": "overlap:Larynx:PTV56:fraction_of_first",
+      "verifier_index": 265
+    },
+    {
+      "index": 254,
+      "name": "overlap:Larynx:PTV56:fraction_of_second",
+      "verifier_index": 266
+    },
+    {
+      "index": 255,
+      "name": "overlap:Larynx:PTV56:dice",
+      "verifier_index": 267
+    },
+    {
+      "index": 256,
+      "name": "overlap:Larynx:PTV63:intersection_cc",
+      "verifier_index": 268
+    },
+    {
+      "index": 257,
+      "name": "overlap:Larynx:PTV63:fraction_of_first",
+      "verifier_index": 269
+    },
+    {
+      "index": 258,
+      "name": "overlap:Larynx:PTV63:fraction_of_second",
+      "verifier_index": 270
+    },
+    {
+      "index": 259,
+      "name": "overlap:Larynx:PTV63:dice",
+      "verifier_index": 271
+    },
+    {
+      "index": 260,
+      "name": "overlap:Larynx:PTV70:intersection_cc",
+      "verifier_index": 272
+    },
+    {
+      "index": 261,
+      "name": "overlap:Larynx:PTV70:fraction_of_first",
+      "verifier_index": 273
+    },
+    {
+      "index": 262,
+      "name": "overlap:Larynx:PTV70:fraction_of_second",
+      "verifier_index": 274
+    },
+    {
+      "index": 263,
+      "name": "overlap:Larynx:PTV70:dice",
+      "verifier_index": 275
+    },
+    {
+      "index": 264,
+      "name": "overlap:Mandible:PTV56:intersection_cc",
+      "verifier_index": 276
+    },
+    {
+      "index": 265,
+      "name": "overlap:Mandible:PTV56:fraction_of_first",
+      "verifier_index": 277
+    },
+    {
+      "index": 266,
+      "name": "overlap:Mandible:PTV56:fraction_of_second",
+      "verifier_index": 278
+    },
+    {
+      "index": 267,
+      "name": "overlap:Mandible:PTV56:dice",
+      "verifier_index": 279
+    },
+    {
+      "index": 268,
+      "name": "overlap:Mandible:PTV63:intersection_cc",
+      "verifier_index": 280
+    },
+    {
+      "index": 269,
+      "name": "overlap:Mandible:PTV63:fraction_of_first",
+      "verifier_index": 281
+    },
+    {
+      "index": 270,
+      "name": "overlap:Mandible:PTV63:fraction_of_second",
+      "verifier_index": 282
+    },
+    {
+      "index": 271,
+      "name": "overlap:Mandible:PTV63:dice",
+      "verifier_index": 283
+    },
+    {
+      "index": 272,
+      "name": "overlap:Mandible:PTV70:intersection_cc",
+      "verifier_index": 284
+    },
+    {
+      "index": 273,
+      "name": "overlap:Mandible:PTV70:fraction_of_first",
+      "verifier_index": 285
+    },
+    {
+      "index": 274,
+      "name": "overlap:Mandible:PTV70:fraction_of_second",
+      "verifier_index": 286
+    },
+    {
+      "index": 275,
+      "name": "overlap:Mandible:PTV70:dice",
+      "verifier_index": 287
+    },
+    {
+      "index": 276,
+      "name": "context:prediction_set:set_1",
+      "verifier_index": 288
+    },
+    {
+      "index": 277,
+      "name": "context:prediction_set:set_2",
+      "verifier_index": 289
+    },
+    {
+      "index": 278,
+      "name": "context:prediction_set:set_3",
+      "verifier_index": 290
+    },
+    {
+      "index": 279,
+      "name": "context:prediction_set:set_4",
+      "verifier_index": 291
+    },
+    {
+      "index": 280,
+      "name": "context:prediction_set:set_5",
+      "verifier_index": 292
+    },
+    {
+      "index": 281,
+      "name": "context:prediction_set:set_6",
+      "verifier_index": 293
+    },
+    {
+      "index": 282,
+      "name": "context:prediction_set:set_7",
+      "verifier_index": 294
+    },
+    {
+      "index": 283,
+      "name": "context:prediction_set:set_8",
+      "verifier_index": 295
+    },
+    {
+      "index": 284,
+      "name": "context:prediction_set:set_9",
+      "verifier_index": 296
+    },
+    {
+      "index": 285,
+      "name": "context:prediction_set:set_10",
+      "verifier_index": 297
+    },
+    {
+      "index": 286,
+      "name": "context:prediction_set:set_11",
+      "verifier_index": 298
+    },
+    {
+      "index": 287,
+      "name": "context:prediction_set:set_12",
+      "verifier_index": 299
+    },
+    {
+      "index": 288,
+      "name": "context:prediction_set:set_13",
+      "verifier_index": 300
+    },
+    {
+      "index": 289,
+      "name": "context:prediction_set:set_14",
+      "verifier_index": 301
+    },
+    {
+      "index": 290,
+      "name": "context:prediction_set:set_15",
+      "verifier_index": 302
+    },
+    {
+      "index": 291,
+      "name": "context:prediction_set:set_16",
+      "verifier_index": 303
+    },
+    {
+      "index": 292,
+      "name": "context:prediction_set:set_17",
+      "verifier_index": 304
+    },
+    {
+      "index": 293,
+      "name": "context:prediction_set:set_18",
+      "verifier_index": 305
+    },
+    {
+      "index": 294,
+      "name": "context:prediction_set:set_19",
+      "verifier_index": 306
+    },
+    {
+      "index": 295,
+      "name": "context:prediction_set:set_20",
+      "verifier_index": 307
+    },
+    {
+      "index": 296,
+      "name": "context:prediction_set:set_21",
+      "verifier_index": 308
+    }
+  ],
+  "public_context_length": 297,
+  "schema_version": "rank-hgb-release-feature-index-1.0.0",
+  "verifier_features": [
+    {
+      "index": 0,
+      "name": "weight:PTV56_coverage"
+    },
+    {
+      "index": 1,
+      "name": "weight:PTV63_coverage"
+    },
+    {
+      "index": 2,
+      "name": "weight:PTV70_coverage"
+    },
+    {
+      "index": 3,
+      "name": "weight:Brainstem_sparing"
+    },
+    {
+      "index": 4,
+      "name": "weight:SpinalCord_sparing"
+    },
+    {
+      "index": 5,
+      "name": "weight:RightParotid_sparing"
+    },
+    {
+      "index": 6,
+      "name": "weight:LeftParotid_sparing"
+    },
+    {
+      "index": 7,
+      "name": "weight:Esophagus_sparing"
+    },
+    {
+      "index": 8,
+      "name": "weight:Larynx_sparing"
+    },
+    {
+      "index": 9,
+      "name": "weight:Mandible_sparing"
+    },
+    {
+      "index": 10,
+      "name": "weight:ring_falloff"
+    },
+    {
+      "index": 11,
+      "name": "weight:posterior_neck_sparing"
+    },
+    {
+      "index": 12,
+      "name": "anatomy:voxel_dimensions_mm:x"
+    },
+    {
+      "index": 13,
+      "name": "anatomy:voxel_dimensions_mm:y"
+    },
+    {
+      "index": 14,
+      "name": "anatomy:voxel_dimensions_mm:z"
+    },
+    {
+      "index": 15,
+      "name": "anatomy:voxel_volume_cc"
+    },
+    {
+      "index": 16,
+      "name": "anatomy:possible_dose_voxel_count"
+    },
+    {
+      "index": 17,
+      "name": "anatomy:possible_dose_volume_cc"
+    },
+    {
+      "index": 18,
+      "name": "anatomy:ct_stored_grid:min"
+    },
+    {
+      "index": 19,
+      "name": "anatomy:ct_stored_grid:mean"
+    },
+    {
+      "index": 20,
+      "name": "anatomy:ct_stored_grid:max"
+    },
+    {
+      "index": 21,
+      "name": "anatomy:ct_stored_grid:p01"
+    },
+    {
+      "index": 22,
+      "name": "anatomy:ct_stored_grid:p05"
+    },
+    {
+      "index": 23,
+      "name": "anatomy:ct_stored_grid:p50"
+    },
+    {
+      "index": 24,
+      "name": "anatomy:ct_stored_grid:p95"
+    },
+    {
+      "index": 25,
+      "name": "anatomy:ct_stored_grid:p99"
+    },
+    {
+      "index": 26,
+      "name": "prediction:possible_dose_mask:min"
+    },
+    {
+      "index": 27,
+      "name": "prediction:possible_dose_mask:mean"
+    },
+    {
+      "index": 28,
+      "name": "prediction:possible_dose_mask:max"
+    },
+    {
+      "index": 29,
+      "name": "prediction:possible_dose_mask:p01"
+    },
+    {
+      "index": 30,
+      "name": "prediction:possible_dose_mask:p05"
+    },
+    {
+      "index": 31,
+      "name": "prediction:possible_dose_mask:p50"
+    },
+    {
+      "index": 32,
+      "name": "prediction:possible_dose_mask:p95"
+    },
+    {
+      "index": 33,
+      "name": "prediction:possible_dose_mask:p99"
+    },
+    {
+      "index": 34,
+      "name": "roi:Brainstem:present"
+    },
+    {
+      "index": 35,
+      "name": "roi:Brainstem:voxel_count"
+    },
+    {
+      "index": 36,
+      "name": "roi:Brainstem:volume_cc"
+    },
+    {
+      "index": 37,
+      "name": "roi:Brainstem:centroid_fraction:x"
+    },
+    {
+      "index": 38,
+      "name": "roi:Brainstem:centroid_fraction:y"
+    },
+    {
+      "index": 39,
+      "name": "roi:Brainstem:centroid_fraction:z"
+    },
+    {
+      "index": 40,
+      "name": "roi:Brainstem:bounding_box_mm:x"
+    },
+    {
+      "index": 41,
+      "name": "roi:Brainstem:bounding_box_mm:y"
+    },
+    {
+      "index": 42,
+      "name": "roi:Brainstem:bounding_box_mm:z"
+    },
+    {
+      "index": 43,
+      "name": "roi:Brainstem:predicted_dose:min"
+    },
+    {
+      "index": 44,
+      "name": "roi:Brainstem:predicted_dose:mean"
+    },
+    {
+      "index": 45,
+      "name": "roi:Brainstem:predicted_dose:max"
+    },
+    {
+      "index": 46,
+      "name": "roi:Brainstem:predicted_dose:p01"
+    },
+    {
+      "index": 47,
+      "name": "roi:Brainstem:predicted_dose:p05"
+    },
+    {
+      "index": 48,
+      "name": "roi:Brainstem:predicted_dose:p50"
+    },
+    {
+      "index": 49,
+      "name": "roi:Brainstem:predicted_dose:p95"
+    },
+    {
+      "index": 50,
+      "name": "roi:Brainstem:predicted_dose:p99"
+    },
+    {
+      "index": 51,
+      "name": "roi:SpinalCord:present"
+    },
+    {
+      "index": 52,
+      "name": "roi:SpinalCord:voxel_count"
+    },
+    {
+      "index": 53,
+      "name": "roi:SpinalCord:volume_cc"
+    },
+    {
+      "index": 54,
+      "name": "roi:SpinalCord:centroid_fraction:x"
+    },
+    {
+      "index": 55,
+      "name": "roi:SpinalCord:centroid_fraction:y"
+    },
+    {
+      "index": 56,
+      "name": "roi:SpinalCord:centroid_fraction:z"
+    },
+    {
+      "index": 57,
+      "name": "roi:SpinalCord:bounding_box_mm:x"
+    },
+    {
+      "index": 58,
+      "name": "roi:SpinalCord:bounding_box_mm:y"
+    },
+    {
+      "index": 59,
+      "name": "roi:SpinalCord:bounding_box_mm:z"
+    },
+    {
+      "index": 60,
+      "name": "roi:SpinalCord:predicted_dose:min"
+    },
+    {
+      "index": 61,
+      "name": "roi:SpinalCord:predicted_dose:mean"
+    },
+    {
+      "index": 62,
+      "name": "roi:SpinalCord:predicted_dose:max"
+    },
+    {
+      "index": 63,
+      "name": "roi:SpinalCord:predicted_dose:p01"
+    },
+    {
+      "index": 64,
+      "name": "roi:SpinalCord:predicted_dose:p05"
+    },
+    {
+      "index": 65,
+      "name": "roi:SpinalCord:predicted_dose:p50"
+    },
+    {
+      "index": 66,
+      "name": "roi:SpinalCord:predicted_dose:p95"
+    },
+    {
+      "index": 67,
+      "name": "roi:SpinalCord:predicted_dose:p99"
+    },
+    {
+      "index": 68,
+      "name": "roi:RightParotid:present"
+    },
+    {
+      "index": 69,
+      "name": "roi:RightParotid:voxel_count"
+    },
+    {
+      "index": 70,
+      "name": "roi:RightParotid:volume_cc"
+    },
+    {
+      "index": 71,
+      "name": "roi:RightParotid:centroid_fraction:x"
+    },
+    {
+      "index": 72,
+      "name": "roi:RightParotid:centroid_fraction:y"
+    },
+    {
+      "index": 73,
+      "name": "roi:RightParotid:centroid_fraction:z"
+    },
+    {
+      "index": 74,
+      "name": "roi:RightParotid:bounding_box_mm:x"
+    },
+    {
+      "index": 75,
+      "name": "roi:RightParotid:bounding_box_mm:y"
+    },
+    {
+      "index": 76,
+      "name": "roi:RightParotid:bounding_box_mm:z"
+    },
+    {
+      "index": 77,
+      "name": "roi:RightParotid:predicted_dose:min"
+    },
+    {
+      "index": 78,
+      "name": "roi:RightParotid:predicted_dose:mean"
+    },
+    {
+      "index": 79,
+      "name": "roi:RightParotid:predicted_dose:max"
+    },
+    {
+      "index": 80,
+      "name": "roi:RightParotid:predicted_dose:p01"
+    },
+    {
+      "index": 81,
+      "name": "roi:RightParotid:predicted_dose:p05"
+    },
+    {
+      "index": 82,
+      "name": "roi:RightParotid:predicted_dose:p50"
+    },
+    {
+      "index": 83,
+      "name": "roi:RightParotid:predicted_dose:p95"
+    },
+    {
+      "index": 84,
+      "name": "roi:RightParotid:predicted_dose:p99"
+    },
+    {
+      "index": 85,
+      "name": "roi:LeftParotid:present"
+    },
+    {
+      "index": 86,
+      "name": "roi:LeftParotid:voxel_count"
+    },
+    {
+      "index": 87,
+      "name": "roi:LeftParotid:volume_cc"
+    },
+    {
+      "index": 88,
+      "name": "roi:LeftParotid:centroid_fraction:x"
+    },
+    {
+      "index": 89,
+      "name": "roi:LeftParotid:centroid_fraction:y"
+    },
+    {
+      "index": 90,
+      "name": "roi:LeftParotid:centroid_fraction:z"
+    },
+    {
+      "index": 91,
+      "name": "roi:LeftParotid:bounding_box_mm:x"
+    },
+    {
+      "index": 92,
+      "name": "roi:LeftParotid:bounding_box_mm:y"
+    },
+    {
+      "index": 93,
+      "name": "roi:LeftParotid:bounding_box_mm:z"
+    },
+    {
+      "index": 94,
+      "name": "roi:LeftParotid:predicted_dose:min"
+    },
+    {
+      "index": 95,
+      "name": "roi:LeftParotid:predicted_dose:mean"
+    },
+    {
+      "index": 96,
+      "name": "roi:LeftParotid:predicted_dose:max"
+    },
+    {
+      "index": 97,
+      "name": "roi:LeftParotid:predicted_dose:p01"
+    },
+    {
+      "index": 98,
+      "name": "roi:LeftParotid:predicted_dose:p05"
+    },
+    {
+      "index": 99,
+      "name": "roi:LeftParotid:predicted_dose:p50"
+    },
+    {
+      "index": 100,
+      "name": "roi:LeftParotid:predicted_dose:p95"
+    },
+    {
+      "index": 101,
+      "name": "roi:LeftParotid:predicted_dose:p99"
+    },
+    {
+      "index": 102,
+      "name": "roi:Esophagus:present"
+    },
+    {
+      "index": 103,
+      "name": "roi:Esophagus:voxel_count"
+    },
+    {
+      "index": 104,
+      "name": "roi:Esophagus:volume_cc"
+    },
+    {
+      "index": 105,
+      "name": "roi:Esophagus:centroid_fraction:x"
+    },
+    {
+      "index": 106,
+      "name": "roi:Esophagus:centroid_fraction:y"
+    },
+    {
+      "index": 107,
+      "name": "roi:Esophagus:centroid_fraction:z"
+    },
+    {
+      "index": 108,
+      "name": "roi:Esophagus:bounding_box_mm:x"
+    },
+    {
+      "index": 109,
+      "name": "roi:Esophagus:bounding_box_mm:y"
+    },
+    {
+      "index": 110,
+      "name": "roi:Esophagus:bounding_box_mm:z"
+    },
+    {
+      "index": 111,
+      "name": "roi:Esophagus:predicted_dose:min"
+    },
+    {
+      "index": 112,
+      "name": "roi:Esophagus:predicted_dose:mean"
+    },
+    {
+      "index": 113,
+      "name": "roi:Esophagus:predicted_dose:max"
+    },
+    {
+      "index": 114,
+      "name": "roi:Esophagus:predicted_dose:p01"
+    },
+    {
+      "index": 115,
+      "name": "roi:Esophagus:predicted_dose:p05"
+    },
+    {
+      "index": 116,
+      "name": "roi:Esophagus:predicted_dose:p50"
+    },
+    {
+      "index": 117,
+      "name": "roi:Esophagus:predicted_dose:p95"
+    },
+    {
+      "index": 118,
+      "name": "roi:Esophagus:predicted_dose:p99"
+    },
+    {
+      "index": 119,
+      "name": "roi:Larynx:present"
+    },
+    {
+      "index": 120,
+      "name": "roi:Larynx:voxel_count"
+    },
+    {
+      "index": 121,
+      "name": "roi:Larynx:volume_cc"
+    },
+    {
+      "index": 122,
+      "name": "roi:Larynx:centroid_fraction:x"
+    },
+    {
+      "index": 123,
+      "name": "roi:Larynx:centroid_fraction:y"
+    },
+    {
+      "index": 124,
+      "name": "roi:Larynx:centroid_fraction:z"
+    },
+    {
+      "index": 125,
+      "name": "roi:Larynx:bounding_box_mm:x"
+    },
+    {
+      "index": 126,
+      "name": "roi:Larynx:bounding_box_mm:y"
+    },
+    {
+      "index": 127,
+      "name": "roi:Larynx:bounding_box_mm:z"
+    },
+    {
+      "index": 128,
+      "name": "roi:Larynx:predicted_dose:min"
+    },
+    {
+      "index": 129,
+      "name": "roi:Larynx:predicted_dose:mean"
+    },
+    {
+      "index": 130,
+      "name": "roi:Larynx:predicted_dose:max"
+    },
+    {
+      "index": 131,
+      "name": "roi:Larynx:predicted_dose:p01"
+    },
+    {
+      "index": 132,
+      "name": "roi:Larynx:predicted_dose:p05"
+    },
+    {
+      "index": 133,
+      "name": "roi:Larynx:predicted_dose:p50"
+    },
+    {
+      "index": 134,
+      "name": "roi:Larynx:predicted_dose:p95"
+    },
+    {
+      "index": 135,
+      "name": "roi:Larynx:predicted_dose:p99"
+    },
+    {
+      "index": 136,
+      "name": "roi:Mandible:present"
+    },
+    {
+      "index": 137,
+      "name": "roi:Mandible:voxel_count"
+    },
+    {
+      "index": 138,
+      "name": "roi:Mandible:volume_cc"
+    },
+    {
+      "index": 139,
+      "name": "roi:Mandible:centroid_fraction:x"
+    },
+    {
+      "index": 140,
+      "name": "roi:Mandible:centroid_fraction:y"
+    },
+    {
+      "index": 141,
+      "name": "roi:Mandible:centroid_fraction:z"
+    },
+    {
+      "index": 142,
+      "name": "roi:Mandible:bounding_box_mm:x"
+    },
+    {
+      "index": 143,
+      "name": "roi:Mandible:bounding_box_mm:y"
+    },
+    {
+      "index": 144,
+      "name": "roi:Mandible:bounding_box_mm:z"
+    },
+    {
+      "index": 145,
+      "name": "roi:Mandible:predicted_dose:min"
+    },
+    {
+      "index": 146,
+      "name": "roi:Mandible:predicted_dose:mean"
+    },
+    {
+      "index": 147,
+      "name": "roi:Mandible:predicted_dose:max"
+    },
+    {
+      "index": 148,
+      "name": "roi:Mandible:predicted_dose:p01"
+    },
+    {
+      "index": 149,
+      "name": "roi:Mandible:predicted_dose:p05"
+    },
+    {
+      "index": 150,
+      "name": "roi:Mandible:predicted_dose:p50"
+    },
+    {
+      "index": 151,
+      "name": "roi:Mandible:predicted_dose:p95"
+    },
+    {
+      "index": 152,
+      "name": "roi:Mandible:predicted_dose:p99"
+    },
+    {
+      "index": 153,
+      "name": "roi:PTV56:present"
+    },
+    {
+      "index": 154,
+      "name": "roi:PTV56:voxel_count"
+    },
+    {
+      "index": 155,
+      "name": "roi:PTV56:volume_cc"
+    },
+    {
+      "index": 156,
+      "name": "roi:PTV56:centroid_fraction:x"
+    },
+    {
+      "index": 157,
+      "name": "roi:PTV56:centroid_fraction:y"
+    },
+    {
+      "index": 158,
+      "name": "roi:PTV56:centroid_fraction:z"
+    },
+    {
+      "index": 159,
+      "name": "roi:PTV56:bounding_box_mm:x"
+    },
+    {
+      "index": 160,
+      "name": "roi:PTV56:bounding_box_mm:y"
+    },
+    {
+      "index": 161,
+      "name": "roi:PTV56:bounding_box_mm:z"
+    },
+    {
+      "index": 162,
+      "name": "roi:PTV56:predicted_dose:min"
+    },
+    {
+      "index": 163,
+      "name": "roi:PTV56:predicted_dose:mean"
+    },
+    {
+      "index": 164,
+      "name": "roi:PTV56:predicted_dose:max"
+    },
+    {
+      "index": 165,
+      "name": "roi:PTV56:predicted_dose:p01"
+    },
+    {
+      "index": 166,
+      "name": "roi:PTV56:predicted_dose:p05"
+    },
+    {
+      "index": 167,
+      "name": "roi:PTV56:predicted_dose:p50"
+    },
+    {
+      "index": 168,
+      "name": "roi:PTV56:predicted_dose:p95"
+    },
+    {
+      "index": 169,
+      "name": "roi:PTV56:predicted_dose:p99"
+    },
+    {
+      "index": 170,
+      "name": "roi:PTV63:present"
+    },
+    {
+      "index": 171,
+      "name": "roi:PTV63:voxel_count"
+    },
+    {
+      "index": 172,
+      "name": "roi:PTV63:volume_cc"
+    },
+    {
+      "index": 173,
+      "name": "roi:PTV63:centroid_fraction:x"
+    },
+    {
+      "index": 174,
+      "name": "roi:PTV63:centroid_fraction:y"
+    },
+    {
+      "index": 175,
+      "name": "roi:PTV63:centroid_fraction:z"
+    },
+    {
+      "index": 176,
+      "name": "roi:PTV63:bounding_box_mm:x"
+    },
+    {
+      "index": 177,
+      "name": "roi:PTV63:bounding_box_mm:y"
+    },
+    {
+      "index": 178,
+      "name": "roi:PTV63:bounding_box_mm:z"
+    },
+    {
+      "index": 179,
+      "name": "roi:PTV63:predicted_dose:min"
+    },
+    {
+      "index": 180,
+      "name": "roi:PTV63:predicted_dose:mean"
+    },
+    {
+      "index": 181,
+      "name": "roi:PTV63:predicted_dose:max"
+    },
+    {
+      "index": 182,
+      "name": "roi:PTV63:predicted_dose:p01"
+    },
+    {
+      "index": 183,
+      "name": "roi:PTV63:predicted_dose:p05"
+    },
+    {
+      "index": 184,
+      "name": "roi:PTV63:predicted_dose:p50"
+    },
+    {
+      "index": 185,
+      "name": "roi:PTV63:predicted_dose:p95"
+    },
+    {
+      "index": 186,
+      "name": "roi:PTV63:predicted_dose:p99"
+    },
+    {
+      "index": 187,
+      "name": "roi:PTV70:present"
+    },
+    {
+      "index": 188,
+      "name": "roi:PTV70:voxel_count"
+    },
+    {
+      "index": 189,
+      "name": "roi:PTV70:volume_cc"
+    },
+    {
+      "index": 190,
+      "name": "roi:PTV70:centroid_fraction:x"
+    },
+    {
+      "index": 191,
+      "name": "roi:PTV70:centroid_fraction:y"
+    },
+    {
+      "index": 192,
+      "name": "roi:PTV70:centroid_fraction:z"
+    },
+    {
+      "index": 193,
+      "name": "roi:PTV70:bounding_box_mm:x"
+    },
+    {
+      "index": 194,
+      "name": "roi:PTV70:bounding_box_mm:y"
+    },
+    {
+      "index": 195,
+      "name": "roi:PTV70:bounding_box_mm:z"
+    },
+    {
+      "index": 196,
+      "name": "roi:PTV70:predicted_dose:min"
+    },
+    {
+      "index": 197,
+      "name": "roi:PTV70:predicted_dose:mean"
+    },
+    {
+      "index": 198,
+      "name": "roi:PTV70:predicted_dose:max"
+    },
+    {
+      "index": 199,
+      "name": "roi:PTV70:predicted_dose:p01"
+    },
+    {
+      "index": 200,
+      "name": "roi:PTV70:predicted_dose:p05"
+    },
+    {
+      "index": 201,
+      "name": "roi:PTV70:predicted_dose:p50"
+    },
+    {
+      "index": 202,
+      "name": "roi:PTV70:predicted_dose:p95"
+    },
+    {
+      "index": 203,
+      "name": "roi:PTV70:predicted_dose:p99"
+    },
+    {
+      "index": 204,
+      "name": "overlap:Brainstem:PTV56:intersection_cc"
+    },
+    {
+      "index": 205,
+      "name": "overlap:Brainstem:PTV56:fraction_of_first"
+    },
+    {
+      "index": 206,
+      "name": "overlap:Brainstem:PTV56:fraction_of_second"
+    },
+    {
+      "index": 207,
+      "name": "overlap:Brainstem:PTV56:dice"
+    },
+    {
+      "index": 208,
+      "name": "overlap:Brainstem:PTV63:intersection_cc"
+    },
+    {
+      "index": 209,
+      "name": "overlap:Brainstem:PTV63:fraction_of_first"
+    },
+    {
+      "index": 210,
+      "name": "overlap:Brainstem:PTV63:fraction_of_second"
+    },
+    {
+      "index": 211,
+      "name": "overlap:Brainstem:PTV63:dice"
+    },
+    {
+      "index": 212,
+      "name": "overlap:Brainstem:PTV70:intersection_cc"
+    },
+    {
+      "index": 213,
+      "name": "overlap:Brainstem:PTV70:fraction_of_first"
+    },
+    {
+      "index": 214,
+      "name": "overlap:Brainstem:PTV70:fraction_of_second"
+    },
+    {
+      "index": 215,
+      "name": "overlap:Brainstem:PTV70:dice"
+    },
+    {
+      "index": 216,
+      "name": "overlap:SpinalCord:PTV56:intersection_cc"
+    },
+    {
+      "index": 217,
+      "name": "overlap:SpinalCord:PTV56:fraction_of_first"
+    },
+    {
+      "index": 218,
+      "name": "overlap:SpinalCord:PTV56:fraction_of_second"
+    },
+    {
+      "index": 219,
+      "name": "overlap:SpinalCord:PTV56:dice"
+    },
+    {
+      "index": 220,
+      "name": "overlap:SpinalCord:PTV63:intersection_cc"
+    },
+    {
+      "index": 221,
+      "name": "overlap:SpinalCord:PTV63:fraction_of_first"
+    },
+    {
+      "index": 222,
+      "name": "overlap:SpinalCord:PTV63:fraction_of_second"
+    },
+    {
+      "index": 223,
+      "name": "overlap:SpinalCord:PTV63:dice"
+    },
+    {
+      "index": 224,
+      "name": "overlap:SpinalCord:PTV70:intersection_cc"
+    },
+    {
+      "index": 225,
+      "name": "overlap:SpinalCord:PTV70:fraction_of_first"
+    },
+    {
+      "index": 226,
+      "name": "overlap:SpinalCord:PTV70:fraction_of_second"
+    },
+    {
+      "index": 227,
+      "name": "overlap:SpinalCord:PTV70:dice"
+    },
+    {
+      "index": 228,
+      "name": "overlap:RightParotid:PTV56:intersection_cc"
+    },
+    {
+      "index": 229,
+      "name": "overlap:RightParotid:PTV56:fraction_of_first"
+    },
+    {
+      "index": 230,
+      "name": "overlap:RightParotid:PTV56:fraction_of_second"
+    },
+    {
+      "index": 231,
+      "name": "overlap:RightParotid:PTV56:dice"
+    },
+    {
+      "index": 232,
+      "name": "overlap:RightParotid:PTV63:intersection_cc"
+    },
+    {
+      "index": 233,
+      "name": "overlap:RightParotid:PTV63:fraction_of_first"
+    },
+    {
+      "index": 234,
+      "name": "overlap:RightParotid:PTV63:fraction_of_second"
+    },
+    {
+      "index": 235,
+      "name": "overlap:RightParotid:PTV63:dice"
+    },
+    {
+      "index": 236,
+      "name": "overlap:RightParotid:PTV70:intersection_cc"
+    },
+    {
+      "index": 237,
+      "name": "overlap:RightParotid:PTV70:fraction_of_first"
+    },
+    {
+      "index": 238,
+      "name": "overlap:RightParotid:PTV70:fraction_of_second"
+    },
+    {
+      "index": 239,
+      "name": "overlap:RightParotid:PTV70:dice"
+    },
+    {
+      "index": 240,
+      "name": "overlap:LeftParotid:PTV56:intersection_cc"
+    },
+    {
+      "index": 241,
+      "name": "overlap:LeftParotid:PTV56:fraction_of_first"
+    },
+    {
+      "index": 242,
+      "name": "overlap:LeftParotid:PTV56:fraction_of_second"
+    },
+    {
+      "index": 243,
+      "name": "overlap:LeftParotid:PTV56:dice"
+    },
+    {
+      "index": 244,
+      "name": "overlap:LeftParotid:PTV63:intersection_cc"
+    },
+    {
+      "index": 245,
+      "name": "overlap:LeftParotid:PTV63:fraction_of_first"
+    },
+    {
+      "index": 246,
+      "name": "overlap:LeftParotid:PTV63:fraction_of_second"
+    },
+    {
+      "index": 247,
+      "name": "overlap:LeftParotid:PTV63:dice"
+    },
+    {
+      "index": 248,
+      "name": "overlap:LeftParotid:PTV70:intersection_cc"
+    },
+    {
+      "index": 249,
+      "name": "overlap:LeftParotid:PTV70:fraction_of_first"
+    },
+    {
+      "index": 250,
+      "name": "overlap:LeftParotid:PTV70:fraction_of_second"
+    },
+    {
+      "index": 251,
+      "name": "overlap:LeftParotid:PTV70:dice"
+    },
+    {
+      "index": 252,
+      "name": "overlap:Esophagus:PTV56:intersection_cc"
+    },
+    {
+      "index": 253,
+      "name": "overlap:Esophagus:PTV56:fraction_of_first"
+    },
+    {
+      "index": 254,
+      "name": "overlap:Esophagus:PTV56:fraction_of_second"
+    },
+    {
+      "index": 255,
+      "name": "overlap:Esophagus:PTV56:dice"
+    },
+    {
+      "index": 256,
+      "name": "overlap:Esophagus:PTV63:intersection_cc"
+    },
+    {
+      "index": 257,
+      "name": "overlap:Esophagus:PTV63:fraction_of_first"
+    },
+    {
+      "index": 258,
+      "name": "overlap:Esophagus:PTV63:fraction_of_second"
+    },
+    {
+      "index": 259,
+      "name": "overlap:Esophagus:PTV63:dice"
+    },
+    {
+      "index": 260,
+      "name": "overlap:Esophagus:PTV70:intersection_cc"
+    },
+    {
+      "index": 261,
+      "name": "overlap:Esophagus:PTV70:fraction_of_first"
+    },
+    {
+      "index": 262,
+      "name": "overlap:Esophagus:PTV70:fraction_of_second"
+    },
+    {
+      "index": 263,
+      "name": "overlap:Esophagus:PTV70:dice"
+    },
+    {
+      "index": 264,
+      "name": "overlap:Larynx:PTV56:intersection_cc"
+    },
+    {
+      "index": 265,
+      "name": "overlap:Larynx:PTV56:fraction_of_first"
+    },
+    {
+      "index": 266,
+      "name": "overlap:Larynx:PTV56:fraction_of_second"
+    },
+    {
+      "index": 267,
+      "name": "overlap:Larynx:PTV56:dice"
+    },
+    {
+      "index": 268,
+      "name": "overlap:Larynx:PTV63:intersection_cc"
+    },
+    {
+      "index": 269,
+      "name": "overlap:Larynx:PTV63:fraction_of_first"
+    },
+    {
+      "index": 270,
+      "name": "overlap:Larynx:PTV63:fraction_of_second"
+    },
+    {
+      "index": 271,
+      "name": "overlap:Larynx:PTV63:dice"
+    },
+    {
+      "index": 272,
+      "name": "overlap:Larynx:PTV70:intersection_cc"
+    },
+    {
+      "index": 273,
+      "name": "overlap:Larynx:PTV70:fraction_of_first"
+    },
+    {
+      "index": 274,
+      "name": "overlap:Larynx:PTV70:fraction_of_second"
+    },
+    {
+      "index": 275,
+      "name": "overlap:Larynx:PTV70:dice"
+    },
+    {
+      "index": 276,
+      "name": "overlap:Mandible:PTV56:intersection_cc"
+    },
+    {
+      "index": 277,
+      "name": "overlap:Mandible:PTV56:fraction_of_first"
+    },
+    {
+      "index": 278,
+      "name": "overlap:Mandible:PTV56:fraction_of_second"
+    },
+    {
+      "index": 279,
+      "name": "overlap:Mandible:PTV56:dice"
+    },
+    {
+      "index": 280,
+      "name": "overlap:Mandible:PTV63:intersection_cc"
+    },
+    {
+      "index": 281,
+      "name": "overlap:Mandible:PTV63:fraction_of_first"
+    },
+    {
+      "index": 282,
+      "name": "overlap:Mandible:PTV63:fraction_of_second"
+    },
+    {
+      "index": 283,
+      "name": "overlap:Mandible:PTV63:dice"
+    },
+    {
+      "index": 284,
+      "name": "overlap:Mandible:PTV70:intersection_cc"
+    },
+    {
+      "index": 285,
+      "name": "overlap:Mandible:PTV70:fraction_of_first"
+    },
+    {
+      "index": 286,
+      "name": "overlap:Mandible:PTV70:fraction_of_second"
+    },
+    {
+      "index": 287,
+      "name": "overlap:Mandible:PTV70:dice"
+    },
+    {
+      "index": 288,
+      "name": "context:prediction_set:set_1"
+    },
+    {
+      "index": 289,
+      "name": "context:prediction_set:set_2"
+    },
+    {
+      "index": 290,
+      "name": "context:prediction_set:set_3"
+    },
+    {
+      "index": 291,
+      "name": "context:prediction_set:set_4"
+    },
+    {
+      "index": 292,
+      "name": "context:prediction_set:set_5"
+    },
+    {
+      "index": 293,
+      "name": "context:prediction_set:set_6"
+    },
+    {
+      "index": 294,
+      "name": "context:prediction_set:set_7"
+    },
+    {
+      "index": 295,
+      "name": "context:prediction_set:set_8"
+    },
+    {
+      "index": 296,
+      "name": "context:prediction_set:set_9"
+    },
+    {
+      "index": 297,
+      "name": "context:prediction_set:set_10"
+    },
+    {
+      "index": 298,
+      "name": "context:prediction_set:set_11"
+    },
+    {
+      "index": 299,
+      "name": "context:prediction_set:set_12"
+    },
+    {
+      "index": 300,
+      "name": "context:prediction_set:set_13"
+    },
+    {
+      "index": 301,
+      "name": "context:prediction_set:set_14"
+    },
+    {
+      "index": 302,
+      "name": "context:prediction_set:set_15"
+    },
+    {
+      "index": 303,
+      "name": "context:prediction_set:set_16"
+    },
+    {
+      "index": 304,
+      "name": "context:prediction_set:set_17"
+    },
+    {
+      "index": 305,
+      "name": "context:prediction_set:set_18"
+    },
+    {
+      "index": 306,
+      "name": "context:prediction_set:set_19"
+    },
+    {
+      "index": 307,
+      "name": "context:prediction_set:set_20"
+    },
+    {
+      "index": 308,
+      "name": "context:prediction_set:set_21"
+    }
+  ],
+  "verifier_input_length": 309
+}
